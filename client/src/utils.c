@@ -30,6 +30,7 @@ int crear_conexion(char *ip, char* puerto)
 
 	// Ahora vamos a crear el socket.
 	int socket_cliente = 0;
+	// int socket_cliente = socket(server_info->ai_family, server_info->ai_socktype,server_info->ai_protocol);
 
 	// Ahora que tenemos el socket, vamos a conectarlo
 	connect(socket_cliente, server_info->ai_addr, server_info->ai_addrlen);
@@ -72,6 +73,7 @@ t_paquete* crear_super_paquete(void)
 {
 	//me falta un malloc!
 	t_paquete* paquete;
+	// DESCOMENTAR, PRI HIZO ESTO paquete = malloc(sizeoff(t_paquete));
 
 	//descomentar despues de arreglar
 	//paquete->codigo_operacion = PAQUETE;

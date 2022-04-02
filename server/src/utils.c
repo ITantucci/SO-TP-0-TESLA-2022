@@ -30,6 +30,8 @@ int iniciar_servidor(void)
 
 int esperar_cliente(int socket_servidor)
 {
+	//struct sockaddr_in dir_cliente;
+	//int tam_direccion = sizeof(struct sockaddr_in);
 	// Aceptamos un nuevo cliente
 	int socket_cliente = accept(socket_servidor, NULL, NULL);
 	log_info(logger, "Se conecto un cliente!");

@@ -15,7 +15,6 @@ int main(void)
 	/* ---------------- LOGGING ---------------- */
 
 	logger = iniciar_logger();
-	logger = log_create("tp0.log", "TP0", 1, LOG_LEVEL_INFO);
 	// Usando el logger creado previamente
 	// Escribi: "Hola! Soy un log"
 	log_info(logger, "Hola! Soy un log");
@@ -23,7 +22,6 @@ int main(void)
 	/* ---------------- ARCHIVOS DE CONFIGURACION ---------------- */
 
 	config = iniciar_config();
-	config = config_create("cliente.config");
 	// Usando el config creado previamente, leemos los valores del config y los 
 	// dejamos en las variables 'ip', 'puerto' y 'valor'
 	valor = config_get_string_value(config, "CLAVE");
@@ -41,9 +39,11 @@ int main(void)
 	// Creamos una conexión hacia el servidor
 	ip = config_get_string_value(config, "IP");
 	puerto = config_get_string_value(config, "PUERTO");
+	printf("Creando conexion...");
 	conexion = crear_conexion(ip, puerto);
 
 	// Enviamos al servidor el valor de CLAVE como mensaje
+	printf("Enviando mensaje...");
 	enviar_mensaje(valor, conexion);
 
 	// Armamos y enviamos el paquete
@@ -60,28 +60,26 @@ int main(void)
 
 t_log* iniciar_logger(void)
 {
-	t_log* nuevo_logger;
+	t_log* nuevo_logger = log_create("tp0.log", "TP0", 1, LOG_LEVEL_INFO);
 
 	return nuevo_logger;
 }
 
 t_config* iniciar_config(void)
 {
-	t_config* nuevo_config;
+	t_config* nuevo_config = config_create("cliente.config");
 
 	return nuevo_config;
 }
 
 void leer_consola(t_log* logger)
 {
-	char* leido;
-
 	// La primera te la dejo de yapa
-	leido = readline("> ");
+	char* leido = readline("> ");
 
 	// El resto, las vamos leyendo y logueando hasta recibir un string vacío
 
-	while(strcmp("", leido) != 0) {
+	while(strcmp(leido, "") != 0) {
 		log_info(logger, leido);
 		free(leido);
 		leido = readline("> ");
