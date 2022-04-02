@@ -9,7 +9,6 @@ int main(void)
 	char* puerto;
 	char* valor;
 
-
 	t_log* logger;
 	t_config* config;
 
@@ -28,42 +27,32 @@ int main(void)
 	// Usando el config creado previamente, leemos los valores del config y los 
 	// dejamos en las variables 'ip', 'puerto' y 'valor'
 	valor = config_get_string_value(config, "CLAVE");
-	ip = config_get_string_value(config, "IP");
-	puerto = config_get_string_value(config, "PUERTO");
 
 	// Loggeamos el valor de config
 	log_info(logger, valor);
 
-	log_destroy(logger); //OJO CON ESTO PARA LEER CONSOLA
-	config_destroy(config);
-
 	/* ---------------- LEER DE CONSOLA ---------------- */
-
-	logger = log_create("tp0.log", "TP0", 1, LOG_LEVEL_INFO);
 	leer_consola(logger);
-
-	char* textoLog = readline("> ");
-
-	while(strcmp("", textoLog)) {
-		log_info(logger, textoLog);
-		textoLog = readline("> ");
-	};
-
-	free(1);
 
 	/*---------------------------------------------------PARTE 3-------------------------------------------------------------*/
 
 	// ADVERTENCIA: Antes de continuar, tenemos que asegurarnos que el servidor esté corriendo para poder conectarnos a él
 
 	// Creamos una conexión hacia el servidor
+	ip = config_get_string_value(config, "IP");
+	puerto = config_get_string_value(config, "PUERTO");
 	conexion = crear_conexion(ip, puerto);
 
 	// Enviamos al servidor el valor de CLAVE como mensaje
+	enviar_mensaje(valor, conexion);
 
 	// Armamos y enviamos el paquete
 	paquete(conexion);
 
 	terminar_programa(conexion, logger, config);
+
+	log_destroy(logger);
+	config_destroy(config);
 
 	/*---------------------------------------------------PARTE 5-------------------------------------------------------------*/
 	// Proximamente
@@ -92,6 +81,11 @@ void leer_consola(t_log* logger)
 
 	// El resto, las vamos leyendo y logueando hasta recibir un string vacío
 
+	while(strcmp("", leido) != 0) {
+		log_info(logger, leido);
+		free(leido);
+		leido = readline("> ");
+	};
 
 	// ¡No te olvides de liberar las lineas antes de regresar!
 

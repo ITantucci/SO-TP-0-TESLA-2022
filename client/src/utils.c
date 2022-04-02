@@ -32,7 +32,7 @@ int crear_conexion(char *ip, char* puerto)
 	int socket_cliente = 0;
 
 	// Ahora que tenemos el socket, vamos a conectarlo
-
+	connect(socket_cliente, server_info->ai_addr, server_info->ai_addrlen);
 
 	freeaddrinfo(server_info);
 
@@ -57,6 +57,7 @@ void enviar_mensaje(char* mensaje, int socket_cliente)
 
 	free(a_enviar);
 	eliminar_paquete(paquete);
+
 }
 
 
