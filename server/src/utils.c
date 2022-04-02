@@ -14,9 +14,12 @@ int iniciar_servidor(void)
 	hints.ai_socktype = SOCK_STREAM;
 	hints.ai_flags = AI_PASSIVE;
 
+	// hay que completar IP PUERTO??
 	getaddrinfo(IP, PUERTO, &hints, &servinfo);
 
 	// Creamos el socket de escucha del servidor
+
+
 
 	// Asociamos el socket a un puerto
 

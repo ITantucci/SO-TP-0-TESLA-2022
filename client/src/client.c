@@ -9,30 +9,47 @@ int main(void)
 	char* puerto;
 	char* valor;
 
+
 	t_log* logger;
 	t_config* config;
 
 	/* ---------------- LOGGING ---------------- */
 
 	logger = iniciar_logger();
-
+	logger = log_create("tp0.log", "TP0", 1, LOG_LEVEL_INFO);
 	// Usando el logger creado previamente
 	// Escribi: "Hola! Soy un log"
-
+	log_info(logger, "Hola! Soy un log");
 
 	/* ---------------- ARCHIVOS DE CONFIGURACION ---------------- */
 
 	config = iniciar_config();
-
+	config = config_create("cliente.config");
 	// Usando el config creado previamente, leemos los valores del config y los 
 	// dejamos en las variables 'ip', 'puerto' y 'valor'
+	valor = config_get_string_value(config, "CLAVE");
+	ip = config_get_string_value(config, "IP");
+	puerto = config_get_string_value(config, "PUERTO");
 
 	// Loggeamos el valor de config
+	log_info(logger, valor);
 
+	log_destroy(logger); //OJO CON ESTO PARA LEER CONSOLA
+	config_destroy(config);
 
 	/* ---------------- LEER DE CONSOLA ---------------- */
 
+	logger = log_create("tp0.log", "TP0", 1, LOG_LEVEL_INFO);
 	leer_consola(logger);
+
+	char* textoLog = readline("> ");
+
+	while(strcmp("", textoLog)) {
+		log_info(logger, textoLog);
+		textoLog = readline("> ");
+	};
+
+	free(1);
 
 	/*---------------------------------------------------PARTE 3-------------------------------------------------------------*/
 
