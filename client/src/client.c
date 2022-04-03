@@ -51,8 +51,7 @@ int main(void)
 
 	terminar_programa(conexion, logger, config);
 
-	log_destroy(logger);
-	config_destroy(config);
+
 
 	/*---------------------------------------------------PARTE 5-------------------------------------------------------------*/
 	// Proximamente
@@ -94,7 +93,12 @@ void paquete(int conexion)
 	// Ahora toca lo divertido!
 	char* leido;
 	t_paquete* paquete;
-
+	//paquete = crear_paquete();
+	paquete = crear_super_paquete();
+	leido = readline("> ");
+	agregar_a_paquete(paquete,leido,strlen(leido)+1);
+	enviar_paquete(paquete,conexion);
+	eliminar_paquete(paquete);
 	// Leemos y esta vez agregamos las lineas al paquete
 
 
@@ -104,6 +108,10 @@ void paquete(int conexion)
 
 void terminar_programa(int conexion, t_log* logger, t_config* config)
 {
+	log_destroy(logger);
+	config_destroy(config);
+	liberar_conexion(conexion);
+
 	/* Y por ultimo, hay que liberar lo que utilizamos (conexion, log y config) 
 	  con las funciones de las commons y del TP mencionadas en el enunciado */
 }

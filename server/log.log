@@ -23,3 +23,87 @@
 [INFO] 16:34:11:064 Servidor/(15267:15267): Servidor listo para recibir al cliente
 [INFO] 16:35:00:163 Servidor/(15484:15484): Servidor listo para recibir al cliente
 [INFO] 16:43:47:432 Servidor/(16279:16279): Servidor listo para recibir al cliente
+[INFO] 10:51:10:740 Servidor/(4984:4984): Servidor listo para recibir al cliente
+[INFO] 10:51:25:557 Servidor/(5022:5022): Servidor listo para recibir al cliente
+[INFO] 10:51:35:827 Servidor/(5047:5047): Servidor listo para recibir al cliente
+[INFO] 10:51:39:803 Servidor/(5057:5057): Servidor listo para recibir al cliente
+[INFO] 10:52:00:652 Servidor/(5073:5073): Servidor listo para recibir al cliente
+[INFO] 10:59:51:902 Servidor/(5459:5459): Servidor listo para recibir al cliente
+[INFO] 11:00:25:595 Servidor/(5459:5459): Se conecto un cliente!
+[INFO] 11:00:25:595 Servidor/(5459:5459): Me llego el mensaje valor
+[ERROR] 11:00:25:595 Servidor/(5459:5459): el cliente se desconecto. Terminando servidor
+[INFO] 11:06:33:287 Servidor/(5584:5584): Servidor listo para recibir al cliente
+[INFO] 11:06:47:490 Servidor/(5584:5584): Se conecto un cliente!
+[INFO] 11:06:47:490 Servidor/(5584:5584): Me llego el mensaje valor
+[ERROR] 11:06:47:491 Servidor/(5584:5584): el cliente se desconecto. Terminando servidor
+[INFO] 11:08:50:016 Servidor/(5636:5636): Servidor listo para recibir al cliente
+[INFO] 11:09:02:276 Servidor/(5636:5636): Se conecto un cliente!
+[INFO] 11:09:02:277 Servidor/(5636:5636): Me llego el mensaje Tesla
+[ERROR] 11:09:02:277 Servidor/(5636:5636): el cliente se desconecto. Terminando servidor
+[INFO] 11:26:06:890 Servidor/(6050:6050): Servidor listo para recibir al cliente
+[INFO] 11:26:37:585 Servidor/(6050:6050): Se conecto un cliente!
+[INFO] 11:26:37:585 Servidor/(6050:6050): Me llego el mensaje Tesla
+[INFO] 11:26:41:646 Servidor/(6050:6050): Me llegaron los siguientes valores:
+
+[INFO] 11:26:41:646 Servidor/(6050:6050): asda°çv·idor
+[ERROR] 11:26:41:646 Servidor/(6050:6050): el cliente se desconecto. Terminando servidor
+[INFO] 11:27:38:400 Servidor/(6155:6155): Servidor listo para recibir al cliente
+[INFO] 11:27:44:530 Servidor/(6155:6155): Se conecto un cliente!
+[INFO] 11:27:44:531 Servidor/(6155:6155): Me llego el mensaje Tesla
+[INFO] 11:27:50:320 Servidor/(6155:6155): Me llegaron los siguientes valores:
+
+[INFO] 11:27:50:320 Servidor/(6155:6155): hola°§y·idor
+[ERROR] 11:27:50:321 Servidor/(6155:6155): el cliente se desconecto. Terminando servidor
+[INFO] 11:28:00:942 Servidor/(6170:6170): Servidor listo para recibir al cliente
+[INFO] 11:28:12:732 Servidor/(6170:6170): Se conecto un cliente!
+[INFO] 11:28:12:732 Servidor/(6170:6170): Me llego el mensaje Tesla
+[INFO] 11:28:18:804 Servidor/(6170:6170): Me llegaron los siguientes valores:
+
+[INFO] 11:28:18:804 Servidor/(6170:6170): abcd°§k·idor
+[ERROR] 11:28:18:804 Servidor/(6170:6170): el cliente se desconecto. Terminando servidor
+[INFO] 11:35:06:031 Servidor/(6353:6353): Servidor listo para recibir al cliente
+[INFO] 11:35:20:457 Servidor/(6353:6353): Se conecto un cliente!
+[INFO] 11:35:20:458 Servidor/(6353:6353): Me llego el mensaje Tesla
+[INFO] 11:35:26:264 Servidor/(6353:6353): Me llegaron los siguientes valores:
+
+[INFO] 11:35:26:264 Servidor/(6353:6353): hola°Çz·idor
+[ERROR] 11:35:26:264 Servidor/(6353:6353): el cliente se desconecto. Terminando servidor
+[INFO] 11:40:54:262 Servidor/(6520:6520): Servidor listo para recibir al cliente
+[INFO] 11:41:08:362 Servidor/(6520:6520): Se conecto un cliente!
+[INFO] 11:41:08:362 Servidor/(6520:6520): Me llego el mensaje Tesla
+[INFO] 11:41:13:543 Servidor/(6520:6520): Me llegaron los siguientes valores:
+
+[INFO] 11:41:13:543 Servidor/(6520:6520): aaaaaaaaaaaaa
+[ERROR] 11:41:13:543 Servidor/(6520:6520): el cliente se desconecto. Terminando servidor
+[INFO] 11:42:44:704 Servidor/(6642:6642): Servidor listo para recibir al cliente
+[INFO] 11:42:58:716 Servidor/(6642:6642): Se conecto un cliente!
+[INFO] 11:42:58:716 Servidor/(6642:6642): Me llego el mensaje Tesla
+[INFO] 11:43:05:409 Servidor/(6642:6642): Me llegaron los siguientes valores:
+
+[INFO] 11:43:05:409 Servidor/(6642:6642): hola buenas tarrdeds
+[ERROR] 11:43:05:409 Servidor/(6642:6642): el cliente se desconecto. Terminando servidor
+[INFO] 11:46:15:743 Servidor/(6832:6832): Servidor listo para recibir al cliente
+[INFO] 11:46:28:102 Servidor/(6832:6832): Se conecto un cliente!
+[INFO] 11:46:28:102 Servidor/(6832:6832): Me llego el mensaje Tesla
+[INFO] 11:46:33:964 Servidor/(6832:6832): Me llegaron los siguientes valores:
+
+[INFO] 11:46:33:964 Servidor/(6832:6832): vamo loco ya casi terminamos
+[ERROR] 11:46:33:964 Servidor/(6832:6832): el cliente se desconecto. Terminando servidor
+[INFO] 11:48:01:670 Servidor/(6947:6947): Servidor listo para recibir al cliente
+[INFO] 11:48:24:945 Servidor/(6947:6947): Se conecto un cliente!
+[INFO] 11:48:24:945 Servidor/(6947:6947): Me llego el mensaje Tesla
+[INFO] 11:48:35:335 Servidor/(6947:6947): Me llegaron los siguientes valores:
+
+[INFO] 11:48:35:335 Servidor/(6947:6947): se rompe o no
+[ERROR] 11:48:35:335 Servidor/(6947:6947): el cliente se desconecto. Terminando servidor
+[INFO] 11:48:48:757 Servidor/(7169:7169): Servidor listo para recibir al cliente
+[INFO] 11:48:57:271 Servidor/(7169:7169): Se conecto un cliente!
+[INFO] 11:48:57:271 Servidor/(7169:7169): Me llego el mensaje Tesla
+[INFO] 11:49:00:080 Servidor/(7169:7169): Me llegaron los siguientes valores:
+
+[INFO] 11:49:00:080 Servidor/(7169:7169): asdf
+[ERROR] 11:49:00:080 Servidor/(7169:7169): el cliente se desconecto. Terminando servidor
+[INFO] 11:51:55:431 Servidor/(7310:7310): Servidor listo para recibir al cliente
+[INFO] 11:52:05:311 Servidor/(7310:7310): Se conecto un cliente!
+[INFO] 11:52:05:312 Servidor/(7310:7310): Me llego el mensaje Tesla
+[ERROR] 11:52:07:990 Servidor/(7310:7310): el cliente se desconecto. Terminando servidor
